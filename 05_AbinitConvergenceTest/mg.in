@@ -1,0 +1,84 @@
+  # Magnesium: Structural Optimization
+
+#  ndtset 2
+#  ndtset 45
+#  udtset 9 5
+
+  # Output parameters
+  prtwf 0 #1
+  prtden 0 #1
+  prteig 0
+#  prtvclmb 1
+#  prtvha 1
+  iomode 3
+
+  # Optimization parameters
+  optcell 2
+  ionmov 2
+  ntime 50
+  dilatmx 1.1
+  ecutsm 0.5 # might need to change it
+  tolmxf 5.0d-6
+  chksymbreak 0
+
+  # Occupation options
+  occopt 3 #4
+  tsmear 0.0333 #0.01
+  nband 20
+
+  #Definition of the unit cell
+  acell 6.066 10.506620198712810 9.845
+#  acell 5.89 10.201779256580686 9.56
+#  acell  5.8898616867E+00  1.0201539691E+01  9.5597755050E+00
+  angdeg 90 90 90
+  chkprim 0
+
+  #Definition of the atom types
+  ntypat 1
+  znucl 12
+
+  #Definition of the atoms
+  natom 4
+  typat 1 1 1 1
+  xred
+# -6.93889390390723E-18  1.47519211083641E-04  0.00000000000000E+00
+#  5.00000000000000E-01  5.00147519211083E-01  0.00000000000000E+00
+# -6.93889390390723E-18  6.66519147455583E-01  5.00000000000000E-01
+#  5.00000000000000E-01  1.66519147455583E-01  5.00000000000000E-01
+  0.0 0.0 0.0
+  0.5 0.5 0.0
+  0.0 2/3 0.5
+  0.5 1/6 0.5
+
+  #Definition of the planewave basis set
+  ecut 24.0         # Maximal kinetic energy cut-off, in Hartree
+
+  #Exchange-correlation functional
+  ixc 7            # Perdew_Wang LDA
+
+  #Definition of the k-point grid
+  kptopt 1
+  ngkpt 8 8 8 # 12 12 12
+#  ngkpt1 12 12 12
+#  ngkpt2 18 18 18
+#  ngkpt1? 30 30 30
+#  ngkpt2? 6 6 6
+#  ngkpt3? 8 8 8
+#  ngkpt4? 10 10 10
+#  ngkpt5? 12 12 12
+#  ngkpt6? 14 14 14
+#  ngkpt7? 16 16 16
+#  ngkpt8? 18 18 18
+#  ngkpt9? 20 20 20
+  nshiftk 1
+  shiftk 0.0 0.0 0.0
+
+  #Definition of the number of grid points for FFT
+  ngfft 36 64 60
+
+  #Definition of the SCF procedure
+  nstep 100          # Maximal number of SCF cycles
+  toldfe 1.0d-12
+#  tolvrs 1.0d-12
+#  toldff 5.0d-7
+
