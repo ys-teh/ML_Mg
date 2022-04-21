@@ -3,7 +3,7 @@ Machine-learned prediction of the electronic fields in a crystal
 
 Written by Ying Shi Teh for the following paper:
 
-Ying Shi Teh, Swarnava Ghosh, and Kaushik Bhattacharya. (2021) Machine-learned prediction of the electronic fields in a crystal, [ArXiv](https://arxiv.org/abs/2104.03831).
+Ying Shi Teh, Swarnava Ghosh, and Kaushik Bhattacharya. (2021) Machine-learned prediction of the electronic fields in a crystal, [JMechMat](https://doi.org/10.1016/j.mechmat.2021.104070).
 
 Folder descriptions
 ==================
